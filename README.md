@@ -41,7 +41,7 @@ terraform apply
 
 Get the credentials to manage the cluster:
 ```bash
-aws eks --region $(terraform output -raw region) update-kubeconfig --name $(terraform output -raw cluster_name)
+aws eks --region $REGION update-kubeconfig --name $CLUSTER_NAME
 ```
 
 Check if the cluster is up and running:
